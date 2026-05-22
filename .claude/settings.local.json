@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(adb connect *)",
+      "Bash(python -c \"import config; config.setup_run_dir\\(\\); print\\('OK'\\)\")",
+      "Bash(python -c \"from game_env import ensure_adb_connected; print\\('import OK'\\)\")",
+      "Bash(python -c \"import py_compile; py_compile.compile\\('collect_data.py', doraise=True\\); py_compile.compile\\('game_env.py', doraise=True\\); py_compile.compile\\('train.py', doraise=True\\); py_compile.compile\\('config.py', doraise=True\\); print\\('All OK'\\)\")",
+      "Bash(python *)",
+      "Bash(adb *)",
+      "Bash(curl -s https://api.github.com/repos/DeviceFarmer/minicap/releases/latest)",
+      "PowerShell(adb *)",
+      "Bash(find ./Source -type f)",
+      "Bash(find ./Content/blueprints -type f)",
+      "Bash(conda run *)",
+      "PowerShell(conda run *)",
+      "Bash(D:/anaconda/anaconda3/envs/RL/python.exe *)",
+      "WebSearch",
+      "Bash(conda env *)",
+      "Bash(D:\\\\anaconda\\\\anaconda3\\\\envs\\\\RL\\\\python.exe *)",
+      "Bash(\"D:\\\\anaconda\\\\anaconda3\\\\envs\\\\RL\\\\python.exe\" -c \"import py_compile; py_compile.compile\\('pretrain_cnn.py', doraise=True\\); print\\('pretrain_cnn OK'\\)\")",
+      "Bash(\"D:\\\\anaconda\\\\anaconda3\\\\envs\\\\RL\\\\python.exe\" -c \"import py_compile; py_compile.compile\\('train_ppo.py', doraise=True\\); print\\('train_ppo OK'\\)\")",
+      "Bash(\"D:\\\\anaconda\\\\anaconda3\\\\envs\\\\RL\\\\python.exe\" -c \"import py_compile; py_compile.compile\\('play_ai.py', doraise=True\\); print\\('play_ai OK'\\)\")",
+      "Bash(\"D:\\\\anaconda\\\\anaconda3\\\\envs\\\\RL\\\\python.exe\" -c \"import py_compile; py_compile.compile\\('game_env.py', doraise=True\\); print\\('game_env OK'\\)\")",
+      "Bash(\"D:\\\\anaconda\\\\anaconda3\\\\envs\\\\RL\\\\python.exe\" -c \"import py_compile; py_compile.compile\\('label_game.py', doraise=True\\); print\\('label_game OK'\\)\")",
+      "Bash(New-Item *)",
+      "Bash(cd /d \"D:\\\\一些word\\\\实验报告\\\\大三下\\\\强化学习\\\\期末课设之熊大快跑\")",
+      "Bash(mkdir doc *)",
+      "PowerShell(New-Item *)",
+      "Bash(rmdir /s /q \"D:\\\\一些word\\\\实验报告\\\\大三下\\\\强化学习\\\\期末课设之熊大快跑\\\\doc\\\\s3\")",
+      "Bash(mkdir \"D:\\\\一些word\\\\实验报告\\\\大三下\\\\强化学习\\\\期末课设之熊大快跑\\\\doc\\\\s3\")"
+    ]
+  }
+}
